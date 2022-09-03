@@ -10,5 +10,4 @@ vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.smartindent = true
 
-vim.api.nvim_set_keymap('v', 'q', 'b', {})
 vim.opt.wrap = false

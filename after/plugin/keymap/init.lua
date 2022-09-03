@@ -16,3 +16,7 @@ nnoremap("m", "<Left>")
 
 vnoremap("J", ":m '>+1<CR>gv=gv")
 vnoremap("K", ":m '<-2<CR>gv=gv")
+vnoremap("m", "<Left>")
+vnoremap("d<S-l>", "d$")
+vnoremap("<S-m>", "^")
+vnoremap("<S-l>", "$")
