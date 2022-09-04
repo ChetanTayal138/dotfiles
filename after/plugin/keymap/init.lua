@@ -1,22 +1,25 @@
-local Remap = require("rhino.keymap")
+local Remap = require("rhino.keymap") 
 local nnoremap = Remap.nnoremap
 local vnoremap = Remap.vnoremap
 local inoremap = Remap.inoremap
 local xnoremap = Remap.xnoremap
+
 local nmap = Remap.nmap
 
-nnoremap("<S-l>", "$")
-nnoremap("<S-m>", "^")
-nnoremap("q", "b")
+nmap("<S-l>", "$")
+nmap("<S-m>", "^")
+nmap("Q", "NOP")
+nmap("J", "NOP")
+nmap("m", "h")
 
-nnoremap("dq", "db")
+nnoremap("q", "b")
 nnoremap("d<S-l>", "d$")
-nnoremap("m", "<Left>")
+nnoremap("d<S-m>", "d^")
+nnoremap("dm", "dh")
+nnoremap("dq", "db")
 
 
 vnoremap("J", ":m '>+1<CR>gv=gv")
 vnoremap("K", ":m '<-2<CR>gv=gv")
-vnoremap("m", "<Left>")
-vnoremap("d<S-l>", "d$")
-vnoremap("<S-m>", "^")
-vnoremap("<S-l>", "$")
+vnoremap("m", "h")
+vnoremap("q", "b")
